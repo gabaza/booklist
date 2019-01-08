@@ -7,11 +7,13 @@ def index
     format.html
     format.text
 
-  end
-  format.csv do
-    render plain: Book.generate_csv(@books)
+    format.csv do
+      render plain: Book.generate_csv(@books)
+
+    end
 
   end
+
 end
 
 end
